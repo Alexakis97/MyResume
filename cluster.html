@@ -45,32 +45,45 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-8">
+          <div class="col-lg-8" style="height: 80vh; width: 35rem;">
             <div class="portfolio-details-slider swiper-container">
               <div class="swiper-wrapper align-items-center">
 
-                <div class="swiper-slide" style="height:650px">
-                  <img  src="assets/img/portfolio/portfolio-1.webp" alt="">
-                </div>
+                  <img src="assets/img/portfolio/region_cluster.jpg" alt="">
+                
 				</div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
 
-          <div class="col-lg-4">
+          <div class="col-lg-4" style="width: 30rem;">
             <div class="portfolio-info">
               <h3>Project information</h3>
-			  <p> Trained a dataset to recognise specific faces
+			  <p> Given the latitude & longitude, your current position is filtered and returned as a municipality
               <ul>
-                <li><strong>Category</strong>: AI & Machine Learning</li>
-                <li><strong>Project date</strong>: 01 March, 2018</li>   
-				<li><strong>Technologies</strong>: OpenCV & Python</li>  
-				
+                <li><strong>Category</strong>: Free & Open Source</li>
+                <li><strong>Project date</strong>: 07 Jan, 2020</li>   
+				<li><strong>Technologies</strong>: Java, Maven, JSON Dataset</li>   
+				<li><strong>Accuracy</strong>: 93%</li>   
+
               </ul>
-			  	<a href="https://pdfs.semanticscholar.org/0916/866570527b609566404ab80ae066cbd3ca7c.pdf"  target="_blank" class="button">
-														<span class="text">View Scientific Documentation</span>
-														<span class="arrow"></span>
-													</a>
+			  <br>
+			  Demo For Developers:<br>
+			  <code>
+			  implementation 'com.github.alexakis97:clustering:1.1.4' //import the library<br><br>
+			  
+			  Point point = new Point(38.021332, 23.798630); //create a new point<br><br>
+			  
+			  Cluster cluster = Cluster.getInstance(); //get the singleton instance<br><br>
+			  cluster.loadCluster();  // load the dataset<br><br>
+			  
+			  System.out.println(cluster.getClusterFeature(point,"en")); //output<br><br>
+
+
+			  </code>
+			  
+			  <a href="https://github.com/Alexakis97/GreekRegionsCluster" target="_blank">Full Documentation Here</b>
+			
             </div>
             
           </div>
